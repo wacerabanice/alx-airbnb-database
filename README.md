@@ -9,6 +9,7 @@ This system manages users, properties, bookings, payments, reviews, and messagin
 ## 📁 Project Structure
 
 airbnb-clone-backend/
+
 ├── schema.sql               # SQL script to create database schema
 
 ├── sample_data.sql          # SQL insert statements for sample data
@@ -31,7 +32,7 @@ airbnb-clone-backend/
 * **UUID** – For unique primary keys
 * **SQL** – Schema and data definition
 * **ER Modeling** – via Graphviz (diagram)
-* **Markdown** – Docs and documentation
+
 
 ---
 
