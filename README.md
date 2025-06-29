@@ -8,15 +8,19 @@ This system manages users, properties, bookings, payments, reviews, and messagin
 
 ## 📁 Project Structure
 
-
 airbnb-clone-backend/
-
 ├── schema.sql               # SQL script to create database schema
+
 ├── sample_data.sql          # SQL insert statements for sample data
+
 ├── requirements.md          # Data model and field specification
+
 ├── normalization.md         # Normalization process to 3NF
+
 ├── airbnb_er_diagram.png    # Visual Entity-Relationship diagram
+
 ├── README.md                # Main project readme
+
 ├── sample_data_README.md    # Notes for the sample data file
 
 ---
