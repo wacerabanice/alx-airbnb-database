@@ -10,6 +10,7 @@ This system manages users, properties, bookings, payments, reviews, and messagin
 
 
 airbnb-clone-backend/
+
 ├── schema.sql               # SQL script to create database schema
 ├── sample_data.sql          # SQL insert statements for sample data
 ├── requirements.md          # Data model and field specification
