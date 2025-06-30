@@ -16,6 +16,7 @@ FROM bookings b
 JOIN users u ON b.user_id = u.user_id
 JOIN properties p ON b.property_id = p.property_id
 LEFT JOIN payments pay ON b.booking_id = pay.booking_id;
+WHERE b.total_price > 0 AND u.role = 'guest';
 
 ---
 
@@ -38,3 +39,4 @@ FROM bookings b
 JOIN users u ON b.user_id = u.user_id
 JOIN properties p ON b.property_id = p.property_id
 LEFT JOIN payments pay ON b.booking_id = pay.booking_id;
+WHERE b.total_price > 0 AND u.role = 'guest';
