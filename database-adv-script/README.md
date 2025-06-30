@@ -19,6 +19,6 @@ This file contains SQL join queries that demonstrate the use of different types 
    - Includes a fallback using `UNION` for databases like MySQL that do not support `FULL OUTER JOIN` directly.
    - Tables involved: `users`, `bookings`
 
-### 💡 Usage
-
-These queries can be executed in any SQL-compatible database environment.
+### 💡 Sub-Queries
+- Contains a query to find all properties where the average rating is greater than 4.0 using a subquery.
+- Conatins a correlated subquery to find users who have made more than 3 bookings.
