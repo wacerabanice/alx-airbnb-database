@@ -19,3 +19,30 @@ CREATE INDEX idx_properties_host_id ON properties(host_id);
 CREATE INDEX idx_bookings_start_date ON bookings(start_date);
 
 
+-- Check performance before/after index creation
+
+-- 1. Query on bookings filtering by user_id
+EXPLAIN ANALYZE 
+SELECT * 
+FROM bookings 
+WHERE user_id = 'sample-user-id';
+
+-- 2. Query on bookings filtering by property_id
+EXPLAIN ANALYZE 
+SELECT * 
+FROM bookings 
+WHERE property_id = 'sample-property-id';
+
+-- 3. Query on reviews joined with properties
+EXPLAIN ANALYZE 
+SELECT r.* 
+FROM reviews r
+JOIN properties p ON r.property_id = p.property_id
+WHERE p.host_id = 'sample-host-id';
+
+-- 4. Query to check bookings in a date range
+EXPLAIN ANALYZE 
+SELECT * 
+FROM bookings 
+WHERE start_date >= '2025-06-01' AND start_date <= '2025-06-30';
+
